@@ -5,3 +5,13 @@
 .button {
     @apply inline-block p-6 bg-blue-600 text-white hover:bg-blue-800 transition;
 }
+
+
+@font-face {
+    font-family: "Nighfall";
+    src: url("/assets/fonts/Nightfall.ttf");
+  }
+
+h1, h2 {
+    font-family: "Nightfall", serif;
+}
