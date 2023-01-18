@@ -15,7 +15,7 @@ module.exports = {
       'black': '#000000',
       'navy': '#2A333F',
       'ocean': '#6B8394', 
-      'sky': '#38404B',      
+      'sky': '#242C36',      
       'citrus': '#F5F0CE',
     },
     fontFamily: {

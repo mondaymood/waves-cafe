@@ -21,7 +21,7 @@ h1, h2 {
 }
 
 .button {
-    @apply inline-block border rounded-full py-2 px-6;
+    @apply inline-block border rounded-full py-2 px-6 hover:bg-white/5; 
 }
 
 /* ------------ Mobile menu ------------ */
@@ -31,5 +31,5 @@ h1, h2 {
     right: -100vw;
   }
   
-  .burger.active { @apply text-citrus }
+  .burger.active { @apply text-citrus fixed top-20 right-10 }
   
