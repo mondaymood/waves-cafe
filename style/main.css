@@ -23,3 +23,13 @@ h1, h2 {
 .button {
     @apply inline-block border rounded-full py-2 px-6;
 }
+
+/* ------------ Mobile menu ------------ */
+
+.mobile-menu-hidden {
+    left: 100vw;
+    right: -100vw;
+  }
+  
+  .burger.active { @apply text-citrus }
+  
