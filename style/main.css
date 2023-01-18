@@ -26,10 +26,7 @@ h1, h2 {
 
 /* ------------ Mobile menu ------------ */
 
-.mobile-menu-hidden {
-    left: 100vw;
-    right: -100vw;
-  }
+.mobile-menu-hidden { @apply left-[100vw] -right-[100vw] }
   
-  .burger.active { @apply text-citrus fixed top-20 right-10 }
+.burger.active { @apply text-citrus fixed top-10 md:top-0 right-10 md:right-0 md:absolute }
   
