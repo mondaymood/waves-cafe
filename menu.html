@@ -1,0 +1,140 @@
+---
+layout: default
+title: Homepage
+drinks:
+  - name: Coffee
+    price: $2.50
+  - name: Cappucino
+    price: $2.50  
+  - name: Latte
+    price: $3
+  - name: Americano
+    price: $3  
+  - name: Flat White
+    price: $3
+  - name: Espresso
+    price: $2
+  - name: Mocha
+    price: $2   
+  - name: Chai Latte
+    price: $2        
+  - name: Homemade Lemon Iced Tea
+    price: $3
+  - name: Homemade Peach Iced Tea
+    price: $3    
+  - name: Homemade Lemonade
+    price: $3      
+  
+snacks:
+  - name: Croissant
+    price: $2
+  - name: Cinnamon Roll
+    price: $3  
+  - name: Banana Bread
+    price: $2
+  - name: Blueberry Muffin
+    price: $3             
+
+---
+
+<section class="bg-ocean -mt-[100vh] md:pt-0 relative">
+  <div class="p-60">
+
+    <h1 class="text-5xl text-center pb-20 px-40 text-citrus">Work is so much easier with a healthy snack in your belly</h1>
+    <div class="grid grid-cols-2 gap-20 text-citrus z-20">
+      
+      <!--------- Drinks --------->
+      <div class="block">
+        <h2 class="text-5xl pb-10">Drinks</h2>
+        {% for item in page.drinks %}
+        <li class="flex pb-3 uppercase" data-aos="fade-up">
+            <p class="">{{item.name}}</p>
+            <div class="grow border-b border-dotted mb-[0.4rem] mx-1"> </div>
+            <p class="text-right">{{item.price}}</p>
+        </li>
+        {% endfor %}
+      </div>
+
+      <div class="block">
+        <img src="/assets/waves-cafe.jpg" class="h-[55vh] w-full object-cover z-20">
+      </div>
+
+      <!--------- Snacks --------->
+
+      <div class="block">
+        <img src="/assets/waves-cafe.jpg" class="h-[50vh] w-full object-cover">
+      </div>
+
+      <div class="block">
+        <h2 class="text-3xl pb-10">Snacks</h2>
+        {% for item in page.snacks %}
+        <ul class="flex pb-2" data-aos="fade-up">
+            <div class="after:content-[' '] after:border-b after:border-b-black">{{item.name}}</div>
+            <div class="text-right grow border-b border-dotted mb-[0.4rem] mx-1"> </div>
+            <div class="text-right ">{{item.price}}</div>
+        </ul>
+        {% endfor %}
+      </div>
+
+      <!--------- Lunch --------->
+
+      <div class="block">
+        <h2 class="text-3xl pb-10">Snacks</h2>
+        {% for item in page.snacks %}
+        <ul class="flex pb-2" data-aos="fade-up">
+            <div class="after:content-[' '] after:border-b after:border-b-black">{{item.name}}</div>
+            <div class="text-right grow border-b border-dotted mb-[0.4rem] mx-1"> </div>
+            <div class="text-right ">{{item.price}}</div>
+        </ul>
+        {% endfor %}
+      </div>
+
+      <div class="block">
+        <img src="/assets/waves-cafe.jpg" class="h-[50vh] w-full object-cover">
+      </div>
+
+      <!--------- Cocktails --------->
+
+      <div class="block">
+        <img src="/assets/waves-cafe.jpg" class="h-[50vh] w-full object-cover">
+      </div>
+
+      <div class="block">
+        <h2 class="text-3xl pb-10">Snacks</h2>
+        {% for item in page.snacks %}
+        <ul class="flex pb-2" data-aos="fade-up">
+            <div class="after:content-[' '] after:border-b after:border-b-black">{{item.name}}</div>
+            <div class="text-right grow border-b border-dotted mb-[0.4rem] mx-1"> </div>
+            <div class="text-right ">{{item.price}}</div>
+        </ul>
+        {% endfor %}
+      </div>
+    
+    </div>
+  </div>
+
+    <!--------- Lines --------->
+    <div class="absolute z-0 right-0 top-[54%] md:top-[50%]">
+      <svg xmlns="http://www.w3.org/2000/svg" width="400" height="90" viewBox="0 0 498.996 94.869">
+      <g id="Gruppe_28" data-name="Gruppe 28" transform="translate(77 -2655)">
+        <path id="Pfad_10" data-name="Pfad 10" d="M499,.5C478.2.5,478.2,20.369,457.412,20.369S436.619.5,415.827.5s-20.791,19.869-41.582,19.869S353.453.5,332.662.5,311.871,20.369,291.08,20.369,270.289.5,249.5.5s-20.792,19.869-41.584,19.869S187.121.5,166.329.5s-20.791,19.869-41.582,19.869S103.955.5,83.164.5,62.373,20.369,41.582,20.369,20.791.5,0,.5" transform="translate(-77 2656)" fill="none" stroke="#2A333F" stroke-miterlimit="10" stroke-width="3"/>
+        <path id="Pfad_11" data-name="Pfad 11" d="M499,.5C478.2.5,478.2,20.369,457.412,20.369S436.619.5,415.827.5s-20.791,19.869-41.582,19.869S353.453.5,332.662.5,311.871,20.369,291.08,20.369,270.289.5,249.5.5s-20.792,19.869-41.584,19.869S187.121.5,166.329.5s-20.791,19.869-41.582,19.869S103.955.5,83.164.5,62.373,20.369,41.582,20.369,20.791.5,0,.5" transform="translate(-77 2692)" fill="none" stroke="#2A333F" stroke-miterlimit="10" stroke-width="3"/>
+        <path id="Pfad_12" data-name="Pfad 12" d="M499,.5C478.2.5,478.2,20.369,457.412,20.369S436.619.5,415.827.5s-20.791,19.869-41.582,19.869S353.453.5,332.662.5,311.871,20.369,291.08,20.369,270.289.5,249.5.5s-20.792,19.869-41.584,19.869S187.121.5,166.329.5s-20.791,19.869-41.582,19.869S103.955.5,83.164.5,62.373,20.369,41.582,20.369,20.791.5,0,.5" transform="translate(-77 2728)" fill="none" stroke="#2A333F" stroke-miterlimit="10" stroke-width="3"/>
+      </g>
+      </svg>
+    </div>  
+
+
+    <!--------- Lines --------->
+    <div class="absolute z-0 left-0 top-[54%] md:top-[90%]">
+      <svg xmlns="http://www.w3.org/2000/svg" width="400" height="90" viewBox="0 0 498.996 94.869">
+      <g id="Gruppe_28" data-name="Gruppe 28" transform="translate(77 -2655)">
+        <path id="Pfad_10" data-name="Pfad 10" d="M499,.5C478.2.5,478.2,20.369,457.412,20.369S436.619.5,415.827.5s-20.791,19.869-41.582,19.869S353.453.5,332.662.5,311.871,20.369,291.08,20.369,270.289.5,249.5.5s-20.792,19.869-41.584,19.869S187.121.5,166.329.5s-20.791,19.869-41.582,19.869S103.955.5,83.164.5,62.373,20.369,41.582,20.369,20.791.5,0,.5" transform="translate(-77 2656)" fill="none" stroke="#2A333F" stroke-miterlimit="10" stroke-width="3"/>
+        <path id="Pfad_11" data-name="Pfad 11" d="M499,.5C478.2.5,478.2,20.369,457.412,20.369S436.619.5,415.827.5s-20.791,19.869-41.582,19.869S353.453.5,332.662.5,311.871,20.369,291.08,20.369,270.289.5,249.5.5s-20.792,19.869-41.584,19.869S187.121.5,166.329.5s-20.791,19.869-41.582,19.869S103.955.5,83.164.5,62.373,20.369,41.582,20.369,20.791.5,0,.5" transform="translate(-77 2692)" fill="none" stroke="#2A333F" stroke-miterlimit="10" stroke-width="3"/>
+        <path id="Pfad_12" data-name="Pfad 12" d="M499,.5C478.2.5,478.2,20.369,457.412,20.369S436.619.5,415.827.5s-20.791,19.869-41.582,19.869S353.453.5,332.662.5,311.871,20.369,291.08,20.369,270.289.5,249.5.5s-20.792,19.869-41.584,19.869S187.121.5,166.329.5s-20.791,19.869-41.582,19.869S103.955.5,83.164.5,62.373,20.369,41.582,20.369,20.791.5,0,.5" transform="translate(-77 2728)" fill="none" stroke="#2A333F" stroke-miterlimit="10" stroke-width="3"/>
+      </g>
+      </svg>
+    </div>  
+
+
+</section>

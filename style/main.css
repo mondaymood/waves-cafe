@@ -4,12 +4,15 @@
  
 /* –––––––––– Typography styles –––––––––– */
 
-* {
+p {
     font-family: "Montserrat", sans;
+    font-size: 0.9rem;
     font-weight: 300;
     line-height: 1.5rem;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.3em;
 }
+
+
 
 @font-face {
     font-family: "Nighfall";
@@ -18,6 +21,7 @@
 
 h1, h2 {
     font-family: "Nightfall", serif;
+    letter-spacing: 0.1em;
 }
 
 .button {
@@ -28,5 +32,5 @@ h1, h2 {
 
 .mobile-menu-hidden { @apply left-[100vw] -right-[100vw] }
   
-.burger.active { @apply text-citrus fixed top-10 md:top-0 right-10 md:right-0 md:absolute }
+.burger.active { @apply text-citrus fixed top-14 md:top-0 right-12 md:right-0 md:absolute }
   

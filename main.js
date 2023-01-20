@@ -1,3 +1,6 @@
+/////// Animate on scroll /////// 
+AOS.init();
+
 /////// Mobile menue /////// 
 
 const burgerButton = document.querySelector('.burger')
@@ -9,6 +12,3 @@ function openMobileMenu() {
 }
 
 burgerButton.addEventListener('click', openMobileMenu)
-
-/////// Animate on scroll /////// 
-AOS.init();
